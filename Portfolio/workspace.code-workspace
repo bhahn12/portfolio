@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../../.bitnami/stackman/machines/xampp/volumes/root/htdocs/Final"
+		},
+		{
+			"path": "../../.bitnami/stackman/machines/xampp/volumes/root/htdocs/Final/Images"
+		},
+		{
+			"path": "../../.bitnami/stackman/machines/xampp/volumes/root/htdocs/senior-project1"
+		},
+		{
+			"path": "../../Downloads/Flexbox_And_Responsive"
+		},
+		{
+			"path": "../../Downloads/Flexbox_And_Responsive/MediaQueries Starter"
+		},
+		{
+			"path": "."
+		}
+	]
+}

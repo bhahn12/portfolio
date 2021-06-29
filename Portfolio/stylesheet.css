@@ -1,0 +1,231 @@
+html, body{
+    height: 100vh;
+    font-family: 'Newsreader', serif;
+    overflow: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+header{
+    color: white;
+    padding-bottom: 1%;
+    background-color: #272727;
+}
+
+.center{
+    text-align: center;
+}
+
+ul li {
+    background: none;
+    font-size: 1em;
+    transition: color 0.2s, border-color 0.2s, box-shadow 0.2s, border-radius 0.3s;
+}
+/* animation for hovering on navlist items */
+ul li:hover {
+border-color:  #494949;
+background-color: #2c2c2c;
+box-shadow: 0 0.5em 0.5em -0.4em  #280336;
+cursor: pointer;
+border-radius: 20%;
+}
+
+.navbar-nav,
+  .mr-auto {
+  flex: 1;
+  margin: auto !important;
+  justify-content: flex-end;
+  }
+
+.nav-item{
+    font-size: large;
+}
+.nav-items{
+    font-size: large;
+    border-right: 1px solid white;
+}
+.navbar-dark{
+    color: white;
+}
+img.rounded {
+      border-radius: 30px;
+  }
+
+.img-curved {
+    border-radius: 10px;
+}
+
+.img-height{
+    width: 320px;
+    height: 320px;
+}
+
+/* wrapper for images in projects */
+.img-wrap{
+    position: relative;
+    max-width: 320px;
+}
+/* overlay for hidden element behind projects imgs  */
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1; 
+    width: 320px;
+    height: 320px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+  }
+  .overlay span{
+    position:relative;
+    top:25%;
+  }
+  .img-wrap:hover .overlay {
+    opacity: 1;
+  }
+
+/* set so the text inside the overlay remains white with no url underline */
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    width: 32px;
+    height: 32px;
+}
+
+.topLogo{
+    width: 64px;
+    height: 64px;
+}
+
+.heading{
+    font-size: 400%;
+    font-weight: bolder;
+}
+
+div.hidden{
+    display: none;
+}
+
+.large-text{
+    font-size: 2em;
+}
+
+#intro{
+    background-color: white;
+    padding-top: 5%;
+    height: 100%;
+}
+
+#projects{
+    background-color: white;
+}
+
+#about{
+    background-color: #272727;
+    border-radius: 25px;
+    color: white;
+}
+.about-text{
+    font-size: 1.2em;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.inner{
+    width: 40%;
+    margin-left: 30%;
+    border: 1px solid white;
+}
+.skill-wrap{
+    border: 1px solid rgb(72, 1, 153);
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+footer{
+    background-color: #272727;
+    color: white;
+}
+
+@media (max-width: 992px){
+    .display-3{
+        font-size: 300%;
+    }
+    .img-height{
+        width: 15em;
+        height: 15em;
+    }
+    .about-text{
+        font-size: 1em;
+    }
+    .overlay {
+        width: 240px;
+        height: 240px;
+        font-size: medium;
+        text-align: center;
+        display: block;
+      }
+      .img-wrap{
+          width: 15em;
+          height: 15em;
+      }
+
+      .skill-wrap{
+        border: 1px solid rgb(72, 1, 153);
+        border-radius: 30px;
+        background-color: white;
+        color: black;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+  @media (max-width: 767px) {
+    .navbar-nav,
+    .mr-auto {
+    flex: 1;
+    margin: auto !important;
+    display: flex;
+    justify-content: flex-end;
+    }
+
+    ul li:hover
+      {
+          border-radius: 0%;
+          box-shadow: none;
+      }
+      .img-height{
+        width: 150px;
+        height: 150px;
+    }
+    .about-text{
+        font-size: 1em;
+    }
+
+    .overlay {
+        width: 150px;
+        height: 150px;
+        font-size: small;
+        text-align: center;
+        display: block;
+      }
+      .img-wrap{
+        width: 150px;
+        height: 150px;
+    }
+  }
+
